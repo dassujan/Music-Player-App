@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Jost", sans-serif;
+}
+.main_div {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d0d0d0;
+  display: grid;
+  place-items: center;
+}
+.music_container {
+  width: 35rem;
+  height: 58rem;
+  background-color: #ece9e9;
+  border-radius: 2rem;
+  box-shadow: 0 1.2px 3rem rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  text-align: center;
+}
+.music_container #title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  letter-spacing: 0.5rem;
+  color: #7f0517;
+  margin: 2rem 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+.music_container #artist {
+  color: #696969;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 300;
+}
+.img_container {
+  width: 25rem;
+  height: 25rem;
+  margin: auto;
+}
+img {
+  /* make the img object fit and circle */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.4);
+}
+.music_controls {
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 5rem;
+}
+.music_controls .fas {
+  color: #111111;
+  font-size: 2rem;
+  cursor: pointer;
+  filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+.music_controls .main_button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #111;
+  color: #f6f6f6;
+  font-size: 1.4rem;
+  /* add display flex to center the icons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music_controls .fas:hover {
+  color: gray;
+}
+.music_controls .fa-play:hover {
+  background-color: #f6f6f6;
+  color: #111;
+  box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+/* add anime class to animate */
+.anime {
+  animation: roatePlayer 3s linear infinite;
+}
+@keyframes roatePlayer {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
