@@ -14,14 +14,14 @@ html {
 .main_div {
   width: 100vw;
   height: 100vh;
-  background-color: #d0d0d0;
+  background-color: #aabbc9;
   display: grid;
   place-items: center;
 }
 .music_container {
   width: 35rem;
   height: 58rem;
-  background-color: #ece9e9;
+  background-color: #d0d0d0;
   border-radius: 2rem;
   box-shadow: 0 1.2px 3rem rgba(0, 0, 0, 0.2);
   padding: 3rem;

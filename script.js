@@ -21,8 +21,8 @@ const songs = [
     },
     {
         name: "music-3",
-        title: "Love Me Like You Do",
-        artist: "Ellie Goulding",
+        title: "Heaven",
+        artist: "Julia Michaels",
     },
 ];
 
